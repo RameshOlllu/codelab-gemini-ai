@@ -17,8 +17,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/gemini', async (req, res) => {
+    try{
+    console.log('Hello Gemini');
     let output = await gemini.generateStory(req.query.promt);
     res.send(output);
+} catch (error) {
+    console.error('Error during /greet:', error);
+    res.status(500).send('An error occurred while processing your request.');
+}
 });
 
 app.post('/gemini/suggest', async (req, res) => {
