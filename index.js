@@ -142,23 +142,24 @@ app.post('/gemini/quiz', async (req, res) => {
 app.post('/gemini/learningpath', async (req, res) => {
     let studentData = req.body;
     let sampleJson = getJsonData('LearningPath.json');
+    console.log(studentData);
 
     const prompt = `
-        Based on the topic title generate a learning path based on given example json response.
+        Based on the topic title provided, generate a detailed learning path. Follow the structure provided in the example JSON response.
         
-        **StudentData: ** ${studentData}
+        **Topic Title: ** ${studentData.title}
 
-        **Example Json Response: ** ${sampleJson}
+        **Example Json Response: ** ${JSON.stringify(sampleJson)}
 
         1. Follow the structure of the given example json and generate the response.
-        2. Make sure you send the entire response strictly in json.
-        3. in the response if any field contains any special character then add escape character for that such that when I parse this as string in dart then wont get string parse errors.
+        2. Ensure that all fields, including the title, brief description, and detailed topics, are relevant to the given topic.
+        3. Make sure the response is strictly in JSON format.
+        4. If any field contains special characters, ensure they are properly escaped for JSON parsing.
     `;
-    // console.log(prompt)
 
     try {
         let output = await gemini.generateStory(prompt);
-        res.send(output);
+        res.json(JSON.parse(output)); // Send the output as a JSON response
     } catch (error) {
         console.log(error);
         res.status(500).send(`
