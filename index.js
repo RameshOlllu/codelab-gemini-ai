@@ -235,5 +235,5 @@ app.post('/gemini/ideas', async (req, res) => {
 
 // Start the server and listen for connections on the specified port
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`New Server is listening on port ${port}`);
 });
