@@ -3,7 +3,7 @@
     {
       "quizTitle": "Sample Quiz Title 1",
       "quizDescription": "This is a description for sample quiz 1.",
-      "topicNAME": "Sample Topic 1",
+      "topicName": "Sample Topic 1",
       "imageUrl": "http://example.com/image1.jpg",
       "questions": [
         {
@@ -27,7 +27,7 @@
     {
       "quizTitle": "Sample Quiz Title 2",
       "quizDescription": "This is a description for sample quiz 2.",
-      "topicNAME": "Sample Topic 2",
+      "topicName": "Sample Topic 2",
       "imageUrl": "http://example.com/image2.jpg",
       "questions": [
         {

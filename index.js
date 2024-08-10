@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/gemini', async (req, res) => {
     try{
     console.log('Hello Gemini');
-    let output = await gemini.generateStory(req.query.promt);
+    let output = await gemini.generateStory(req.query.prompt);
     res.send(output);
 } catch (error) {
     console.error('Error during /greet:', error);
@@ -86,17 +86,18 @@ app.post('/gemini/quiz', async (req, res) => {
     let sampleJson = getJsonData('SampleJson.json');
 
     const prompt = `
-        I have a list of topics and example json response, based on the topics given and structure of the example json response generate a quiz for each topic.
+        I have a list of topics and example json response, based on the topics given and structure of the example json response generate only one quiz for each topic.
         
         **Topics: ** ${topics}
 
         **Example Json Response: ** ${sampleJson}
 
-        1. Each quiz must contain a maximum of 10 questions.
-        2. For each quiz generate quizTitle, quizDescription, topicName, imageURL (any related image from the web, if not found make it empty string) and array of objects questions.
+        1. Each quiz must contain a maximum of 5 questions.
+        2. For each quiz generate quizTitle, quizDescription, topicName, imageURL (any related image from the web and image URL related to the topic that ends with .png, .jpg, or .jpeg.) and array of objects questions.
         3. The question object should contain questionNumber, questionText, choices (Must be an array of length 4), correctChoice (must be in choices array), reason (reson why the correctChoice is the right one), links(Array of links which can be used to learn more about the question).
         4. The instructions I have follow the structure of the example json, So follow the structure of the given example json and generate the quiz for each topic.
         5. Make sure you send the entire response strictly in json.
+        6. Strictly generate one quiz for given topic
     `;
     // console.log(prompt)
 
