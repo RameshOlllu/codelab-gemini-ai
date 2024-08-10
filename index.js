@@ -159,7 +159,18 @@ app.post('/gemini/learningpath', async (req, res) => {
 
     try {
         let output = await gemini.generateStory(prompt);
-        res.json(JSON.parse(output)); // Send the output as a JSON response
+
+        // Remove any special characters like ```json``` at the start and ` at the end
+        output = output.trim();
+        if (output.startsWith("```json")) {
+            output = output.slice(7);
+        }
+        if (output.endsWith("`")) {
+            output = output.slice(0, -1);
+        }
+
+        // Parse the cleaned-up output
+        res.json(JSON.parse(output));
     } catch (error) {
         console.log(error);
         res.status(500).send(`
