@@ -17,7 +17,7 @@ app.get('/greet', async (req, res) => {
         });
 
         const animal = req.query.animal || 'dog';
-        const prompt = `Give me 10 fun facts about ${animal}. Return this as html without backticks.`
+        const prompt = `Give me 10 fun facts about ${animal}. Return this as html without backticks.`;
         const resp = await generativeModel.generateContent(prompt);
         const html = resp.response.candidates[0].content.parts[0].text;
         res.send(html);
@@ -56,23 +56,15 @@ app.post('/gemini-quiz', async (req, res) => {
             '- choices: A list of 4 multiple-choice answers. ' +
             '- correctChoice: The correct answer. ' +
             '- reason: A brief explanation of why the correct answer is correct. ' +
-            '- links: A list of URLs where the user can learn more about the question. ' +
-            'Format the JSON response exactly like this example: ' +
-            '{"QuizOverviews": [{"quizTitle": "Elasticsearch Fundamentals", "quizDescription": "Test your knowledge of Elasticsearch basics...", ...}]}';
+            '- links: A list of URLs where the user can learn more about the question.';
 
         const resp = await generativeModel.generateContent(prompt);
         const responseText = resp.response.candidates[0].content.parts[0].text;
 
-        // Parse the responseText as JSON before sending it
-        try {
-            const jsonResponse = JSON.parse(responseText);
-            res.json(jsonResponse); 
-        } catch (parseError) {
-            console.error('Error parsing response as JSON:', parseError);
-            res.status(500).send('Failed to parse response as JSON.');
-        }
+        // Directly send the responseText without parsing it
+        res.send(responseText);
     } catch (error) {
-        console.error('Error during /gemini-instruction:', error);
+        console.error('Error during /gemini-quiz:', error);
         res.status(500).send('An error occurred while processing your request.');
     }
 });
