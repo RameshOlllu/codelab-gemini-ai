@@ -98,7 +98,7 @@ app.post('/gemini/quiz', async (req, res) => {
         4. The instructions I have follow the structure of the example json, So follow the structure of the given example json and generate the quiz for each topic.
         5. Make sure you send the entire response strictly in json.
         6. Strictly generate one quiz for given topic.
-        7. In the response do not include characters like single quotes(') or any other special characters which can break the dart code while parsing the response.
+        7. in the response if quizDescription or topicName, choices or reason contain any special character then add escape character for that such that when I parse this as string in dart then wont get string parse errors.
     `;
     // console.log(prompt)
 
@@ -152,6 +152,7 @@ app.post('/gemini/learningpath', async (req, res) => {
 
         1. Follow the structure of the given example json and generate the response.
         2. Make sure you send the entire response strictly in json.
+        3. in the response if any field contains any special character then add escape character for that such that when I parse this as string in dart then wont get string parse errors.
     `;
     // console.log(prompt)
 
