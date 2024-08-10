@@ -160,17 +160,15 @@ app.post('/gemini/learningpath', async (req, res) => {
     try {
         let output = await gemini.generateStory(prompt);
 
-        // Remove any special characters like ```json``` at the start and ` at the end
-        output = output.trim();
-        if (output.startsWith("```json")) {
-            output = output.slice(7);
-        }
-        if (output.endsWith("`")) {
-            output = output.slice(0, -1);
+        // Remove any extraneous characters before and after the JSON
+        const cleanedOutput = output.match(/{.*}/s);
+
+        if (!cleanedOutput) {
+            throw new Error("No valid JSON found in the response");
         }
 
         // Parse the cleaned-up output
-        res.json(JSON.parse(output));
+        res.json(JSON.parse(cleanedOutput[0]));
     } catch (error) {
         console.log(error);
         res.status(500).send(`
