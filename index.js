@@ -43,20 +43,23 @@ app.post('/gemini-quiz', async (req, res) => {
 
         // Use a single-line template literal or concatenation for the prompt
         const prompt = 
-            'Generate a JSON response that includes a single quiz overview for the topic "' + topic + '". ' +
-            'The JSON should include: ' +
-            '1. quizTitle: A title related to the topic. ' +
-            '2. quizDescription: A brief description of the quiz. ' +
-            '3. topicName: The name of the topic. ' +
-            '4. imageUrl: A valid image URL related to the topic that ends with .png, .jpg, or .jpeg. ' +
-            '5. questions: A list of 5 questions related to the topic. ' +
-            'Each question should include: ' +
-            '- questionNumber: A sequential number starting from 1. ' +
-            '- questionText: The text of the question. ' +
-            '- choices: A list of 4 multiple-choice answers. ' +
-            '- correctChoice: The correct answer. ' +
-            '- reason: A brief explanation of why the correct answer is correct. ' +
-            '- links: A list of URLs where the user can learn more about the question.';
+        'Generate a JSON response that includes a single quiz overview for the topic "' + topic + '". ' +
+        'The JSON should include: ' +
+        '1. quizTitle: A title related to the topic. ' +
+        '2. quizDescription: A brief description of the quiz. ' +
+        '3. topicName: The name of the topic. ' +
+        '4. imageUrl: A valid image URL related to the topic that ends with .png, .jpg, or .jpeg. ' +
+        '5. questions: A list of 5 questions related to the topic. ' +
+        'Each question should include: ' +
+        '- questionNumber: A sequential number starting from 1. ' +
+        '- questionText: The text of the question. ' +
+        '- choices: A list of 4 multiple-choice answers. ' +
+        '- correctChoice: The correct answer. ' +
+        '- reason: A brief explanation of why the correct answer is correct. ' +
+        '- links: A list of URLs where the user can learn more about the question. ' +
+        'Format the JSON response exactly like this example: ' +
+        '{"QuizOverviews": [{"quizTitle": "Elasticsearch Fundamentals", "quizDescription": "Test your knowledge of Elasticsearch","topicName":"Kubernetes","imageUrl":"https://kubernetes.io/images/docs/home/kubernetes-logo.png","questions":[{"questionNumber":1,"questionText":"What is Kubernetes?","choices":["A container orchestration platform.","A cloud storage service.","A programming language.","A network monitoring tool."],"correctChoice":"A container orchestration platform.","reason":"Kubernetes is an open-source platform that automates the deployment, scaling, and management of containerized applications.","links":["https://kubernetes.io/"]}, ...}]}';
+
 
         const resp = await generativeModel.generateContent(prompt);
         const responseText = resp.response.candidates[0].content.parts[0].text;
