@@ -1,35 +1,26 @@
 {
-  "name": "",
+  "name": "google_gemini_hackathon",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "license": "AGPL-version-3.0",
-  "private": false,
-  "engines": {
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
+  "description": "This is the server for google hackathon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/ChandraMouliShinagam/Google_Gemini_Hackathon.git"
   },
-  "bugs": "",
-  "keywords": [],
-  "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+  "author": "Mouli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChandraMouliShinagam/Google_Gemini_Hackathon/issues"
   },
-  "contributors": [],
-  "scripts": {
-    "dev": "",
-    "test": ""
-  },
+  "homepage": "https://github.com/ChandraMouliShinagam/Google_Gemini_Hackathon#readme",
   "dependencies": {
-    "@google-cloud/vertexai": "^1.4.1",
+    "@google/generative-ai": "^0.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "google-auth-library": "^9.13.0"
+    "nodemon": "^3.1.4"
   }
 }

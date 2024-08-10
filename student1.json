@@ -1,0 +1,282 @@
+[
+    {
+        "ExamID": 1,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 15
+    },
+    {
+        "ExamID": 1,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 18
+    },
+    {
+        "ExamID": 1,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 25
+    },
+    {
+        "ExamID": 1,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 20
+    },
+    {
+        "ExamID": 2,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 18
+    },
+    {
+        "ExamID": 2,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 22
+    },
+    {
+        "ExamID": 2,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 28
+    },
+    {
+        "ExamID": 2,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 24
+    },
+    {
+        "ExamID": 3,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 16
+    },
+    {
+        "ExamID": 3,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 20
+    },
+    {
+        "ExamID": 3,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 26
+    },
+    {
+        "ExamID": 3,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 22
+    },
+    {
+        "ExamID": 4,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 19
+    },
+    {
+        "ExamID": 4,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 23
+    },
+    {
+        "ExamID": 4,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 27
+    },
+    {
+        "ExamID": 4,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 21
+    },
+    {
+        "ExamID": 5,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 17
+    },
+    {
+        "ExamID": 5,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 21
+    },
+    {
+        "ExamID": 5,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 24
+    },
+    {
+        "ExamID": 5,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 19
+    },
+    {
+        "ExamID": 6,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 14
+    },
+    {
+        "ExamID": 6,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 20
+    },
+    {
+        "ExamID": 6,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 25
+    },
+    {
+        "ExamID": 6,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 18
+    },
+    {
+        "ExamID": 7,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 16
+    },
+    {
+        "ExamID": 7,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 19
+    },
+    {
+        "ExamID": 7,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 26
+    },
+    {
+        "ExamID": 7,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 23
+    },
+    {
+        "ExamID": 8,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 18
+    },
+    {
+        "ExamID": 8,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 22
+    },
+    {
+        "ExamID": 8,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 28
+    },
+    {
+        "ExamID": 8,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 24
+    },
+    {
+        "ExamID": 9,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 20
+    },
+    {
+        "ExamID": 9,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 24
+    },
+    {
+        "ExamID": 9,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 29
+    },
+    {
+        "ExamID": 9,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 25
+    },
+    {
+        "ExamID": 10,
+        "Subject": "Maths",
+        "Concept": "Trigonometry",
+        "TotalMarks": 20,
+        "ObtainedMarks": 19
+    },
+    {
+        "ExamID": 10,
+        "Subject": "Maths",
+        "Concept": "Geometry",
+        "TotalMarks": 25,
+        "ObtainedMarks": 23
+    },
+    {
+        "ExamID": 10,
+        "Subject": "Physics",
+        "Concept": "Mechanics",
+        "TotalMarks": 30,
+        "ObtainedMarks": 27
+    },
+    {
+        "ExamID": 10,
+        "Subject": "Physics",
+        "Concept": "Optics",
+        "TotalMarks": 25,
+        "ObtainedMarks": 22
+    }
+]

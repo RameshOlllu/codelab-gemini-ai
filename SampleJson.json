@@ -1,0 +1,52 @@
+{
+  "QuizOverviews": [
+    {
+      "quizTitle": "Sample Quiz Title 1",
+      "quizDescription": "This is a description for sample quiz 1.",
+      "topicNAME": "Sample Topic 1",
+      "imageUrl": "http://example.com/image1.jpg",
+      "questions": [
+        {
+          "questionNumber": 1,
+          "questionText": "What is the capital of France?",
+          "choices": "Paris, London, Berlin, Madrid",
+          "correctChoice": "Paris",
+          "reason": "Paris is the capital and most populous city of France.",
+          "links": "http://example.com/link1"
+        },
+        {
+          "questionNumber": 2,
+          "questionText": "Which element has the chemical symbol 'O'?",
+          "choices": "Oxygen, Hydrogen, Carbon, Nitrogen",
+          "correctChoice": "Oxygen",
+          "reason": "Oxygen is the chemical element with the symbol 'O' and atomic number 8.",
+          "links": "http://example.com/link2"
+        }
+      ]
+    },
+    {
+      "quizTitle": "Sample Quiz Title 2",
+      "quizDescription": "This is a description for sample quiz 2.",
+      "topicNAME": "Sample Topic 2",
+      "imageUrl": "http://example.com/image2.jpg",
+      "questions": [
+        {
+          "questionNumber": 1,
+          "questionText": "What is the boiling point of water?",
+          "choices": "100°C, 90°C, 80°C, 70°C",
+          "correctChoice": "100°C",
+          "reason": "Water boils at 100 degrees Celsius at standard atmospheric pressure.",
+          "links": "http://example.com/link3"
+        },
+        {
+          "questionNumber": 2,
+          "questionText": "What is the largest planet in our solar system?",
+          "choices": "Jupiter, Saturn, Earth, Mars",
+          "correctChoice": "Jupiter",
+          "reason": "Jupiter is the largest planet in our solar system.",
+          "links": "http://example.com/link4"
+        }
+      ]
+    }
+  ]
+}

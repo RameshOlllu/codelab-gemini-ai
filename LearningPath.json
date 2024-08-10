@@ -1,0 +1,56 @@
+{
+  "title": "Google Cloud Platform Learning Path",
+  "briefDescription": "Master the fundamentals of Google Cloud Platform and build scalable applications.",
+  "learningPath" : [
+    {
+      "topicTitle": "Google Cloud Fundamentals",
+      "topicBrief": "Understand the core concepts of Google Cloud Platform (GCP), including its architecture, services, and pricing models.",
+      "link": "https://cloud.google.com/training/paths/foundations"
+    },
+    {
+      "topicTitle": "Compute Engine",
+      "topicBrief": "Learn how to create, manage, and scale virtual machines on GCP.",
+      "link": "https://cloud.google.com/compute/docs/"
+    },
+    {
+      "topicTitle": "App Engine",
+      "topicBrief": "Build and deploy scalable web applications without managing servers.",
+      "link": "https://cloud.google.com/appengine/docs"
+    },
+    {
+      "topicTitle": "Cloud Storage",
+      "topicBrief": "Store and manage data in the cloud with various storage options.",
+      "link": "https://cloud.google.com/storage/docs"
+    },
+    {
+      "topicTitle": "Cloud SQL",
+      "topicBrief": "Manage relational databases on GCP.",
+      "link": "https://cloud.google.com/sql/docs"
+    },
+    {
+      "topicTitle": "BigQuery",
+      "topicBrief": "Analyze large datasets with a fully managed serverless data warehouse.",
+      "link": "https://cloud.google.com/bigquery/docs"
+    },
+    {
+      "topicTitle": "Cloud Functions",
+      "topicBrief": "Build and connect cloud services with serverless functions.",
+      "link": "https://cloud.google.com/functions/docs"
+    },
+    {
+      "topicTitle": "Kubernetes Engine (GKE)",
+      "topicBrief": "Deploy and manage containerized applications on GCP.",
+      "link": "https://cloud.google.com/kubernetes-engine/docs"
+    },
+    {
+      "topicTitle": "Cloud Dataflow",
+      "topicBrief": "Build and manage data pipelines for batch and stream processing.",
+      "link": "https://cloud.google.com/dataflow/docs"
+    },
+    {
+      "topicTitle": "Cloud Pub/Sub",
+      "topicBrief": "Build real-time data pipelines and messaging systems.",
+      "link": "https://cloud.google.com/pubsub/docs"
+    }
+  ]
+}
