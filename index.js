@@ -97,7 +97,8 @@ app.post('/gemini/quiz', async (req, res) => {
         3. The question object should contain questionNumber, questionText, choices (Must be an array of length 4), correctChoice (must be in choices array), reason (reson why the correctChoice is the right one), links(Array of links which can be used to learn more about the question).
         4. The instructions I have follow the structure of the example json, So follow the structure of the given example json and generate the quiz for each topic.
         5. Make sure you send the entire response strictly in json.
-        6. Strictly generate one quiz for given topic
+        6. Strictly generate one quiz for given topic.
+        7. In the response do not include characters like single quotes(') or any other special characters which can break the dart code while parsing the response.
     `;
     // console.log(prompt)
 
