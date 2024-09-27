@@ -9,7 +9,7 @@ const gemini = new GeminiInterface();
 const getJsonData = require('./utils/jsonreader.js');
 
 app.use(cors());  // Add cors middleware
-app.use(express.json());  // Add JSON parsing middleware
+app.use(express.json());  // Add JSON parsing middleware code
 
 // Route to handle GET requests to the root path (/)
 app.get('/', (req, res) => {
